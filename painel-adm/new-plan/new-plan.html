@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Subscription Plan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Criar Plano Customizado</h1>
+        <p>Informe os dados abaixo.</p>
+        <form>
+            <div class="form-group">
+                <label for="plan-id">ID</label>
+                <input type="text" id="plan-id" placeholder="Insira o ID do plano">
+            </div>
+            <div class="form-group">
+                <label for="plan-name">Nome</label>
+                <input type="text" id="plan-name" placeholder="Insira nome do plano">
+            </div>
+            <div class="form-group">
+                <label for="plan-description">Descrição</label>
+                <textarea id="plan-description" placeholder="Insira descrição do plano"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="plan-price">Preço</label>
+                <input type="number" id="plan-price" placeholder="Insira preço do plano">
+            </div>
+            <div class="form-group">
+                <label for="voice-tokens">Voice Studio Tokens</label>
+                <input type="number" id="voice-tokens" placeholder="Insira quantidade de Tokens Voice Studio">
+            </div>
+            <div class="form-group">
+                <label for="gpt-tokens">GPT Tokens</label>
+                <input type="number" id="gpt-tokens" placeholder="Enter GPT tokens">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="chat">
+                    <label for="chat">Chat</label>
+                    <input type="checkbox" id="transcription">
+                    <label for="transcription">Transcription</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="voice-limit">Voice Studio Limit</label>
+                <input type="number" id="voice-limit" placeholder="Insira limite vozes clonadas">
+            </div>
+            <div class="form-group">
+                <label for="workspace-limit">Workspace</label>
+                <input type="number" id="workspace-limit" placeholder="Insira Limite de Workspaces">
+            </div>
+            <div class="form-group">
+                <label for="device-limit">Dispositivos</label>
+                <input type="number" id="device-limit" placeholder="Insira limite de dispositivos">
+            </div>
+            <div class="form-group">
+                <label for="plan-id">ID usuário</label>
+                <input type="text" id="plan-id" placeholder="Insira o ID do usuário">
+            </div>
+            <button type="submit">Criar Plano</button>
+        </form>
+    </div>
+</body>
+</html>
